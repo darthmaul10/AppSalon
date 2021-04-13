@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,34 @@
                 <h1>App Peluqueria</h1>
             </header>
             <nav class="tabs">
-                <button type="button">Servicios</button>
-                <button type="button">Información Cliente</button>
-                <button type="button">Resumen</button>
+                <button type="button" data-paso="1">Servicios</button>
+                <button type="button"data-paso="2">Información Cliente</button>
+                <button type="button"data-paso="3">Resumen</button>
             </nav>
+
+            <div id="paso-1" class="seccion">
+                <h2>Servicios</h2>
+                <p class="text-center">elige tus servicios a continuacion</p>
+                <div id="servicios" class="listado-servicios">
+                    
+                </div>
+            </div>
+            <div id="paso-2" class="seccion">
+                <h2>Tus datos y citas</h2>
+            </div>
+            <div id="paso-3" class="seccion">
+                <h2>Resumen</h2>
+            </div>
+
+            <div class="paginacion">
+                <button id="anterior">
+                    &laquo; anterior
+                </button>
+                <button id="siguiente">
+                    siguiente &raquo;
+                </button>
+            </div>
+
         </div>
     </div>
 
